@@ -1,0 +1,230 @@
+{
+	"id": "27cb2e89-af9c-4347-acee-223cf3383640",
+	"name": "TrustLine",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"75932c6e-d7ed-4ade-9d82-ea9f43dc9b5a",
+		"c6c6c8b8-99ef-4387-b085-b9dfffc3667c",
+		"0271e2cf-4c92-4213-a4e8-fd73bb104a22",
+		"1d57a0c7-d31b-44e8-913f-2d9e2b9050b0",
+		"d08b7365-fe36-4ee1-96bd-eedc9e02a92f",
+		"b3d9bcec-0d92-44a0-913a-5b496ced47e7",
+		"e07b377f-b1a4-4db1-ac5f-c3ed169608cd",
+		"508f0583-49cb-49ae-a9d1-2ba7d7618871",
+		"20c05037-56fa-49da-ab21-2247ce114150",
+		"a2e9165e-1e67-4ba5-b125-bd737b2c3c17"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "0271e2cf-4c92-4213-a4e8-fd73bb104a22",
+			"name": "http://localhost:18080/trustline/signup",
+			"url": "http://localhost:18080/trustline/signup",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"username\" : \"Alice\",\n\t\"password\" : \"password\",\n\t\"name\" : \"Alice\",\n\t\"family\" : \"Alice\",\n\t\"email\" : \"Alice@gmail.com\",\n\t\"phone\" : \"4434304841\",\n\t\"balance\" : 0,\n\t\"url\" : \"http://localhost:18080/trustline\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "1d57a0c7-d31b-44e8-913f-2d9e2b9050b0",
+			"name": "http://localhost:18080/trustline/signup Copy",
+			"url": "http://localhost:8080/trustline/signup",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"username\" : \"Bob\",\n\t\"password\" : \"password\",\n\t\"name\" : \"Bob\",\n\t\"family\" : \"Bob\",\n\t\"email\" : \"Bob@gmail.com\",\n\t\"phone\" : \"4434304841\",\n\t\"balance\" : 0,\n\t\"url\" : \"http://localhost:8080/trustline\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "20c05037-56fa-49da-ab21-2247ce114150",
+			"name": "http://localhost:18080/trustline/payto/Bob",
+			"url": "http://localhost:18080/trustline/payto/Bob",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"amount\":10\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "508f0583-49cb-49ae-a9d1-2ba7d7618871",
+			"name": "http://localhost:18080/trustline/parties Copy",
+			"url": "http://localhost:8080/trustline/parties",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "75932c6e-d7ed-4ade-9d82-ea9f43dc9b5a",
+			"name": "http://localhost:18080/trustline/",
+			"url": "http://localhost:18080/trustline/",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "a2e9165e-1e67-4ba5-b125-bd737b2c3c17",
+			"name": "http://localhost:18080/trustline/recievemoney/Bob",
+			"url": "http://localhost:18080/trustline/recievemoney/Bob",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"amount\":10\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b3d9bcec-0d92-44a0-913a-5b496ced47e7",
+			"name": "http://localhost:18080/trustline/party Copy",
+			"url": "http://localhost:8080/trustline/party",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"name\":\"Alice\",\n\t\"email\":\"Alice@gmail.com\",\n\t\"phone\":\"1234567890\",\n\t\"url\":\"http://localhost:18080/trustline\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "c6c6c8b8-99ef-4387-b085-b9dfffc3667c",
+			"name": "http://localhost:18080/trustline/ Copy",
+			"url": "http://localhost:8080/trustline/",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "d08b7365-fe36-4ee1-96bd-eedc9e02a92f",
+			"name": "http://localhost:18080/trustline/party",
+			"url": "http://localhost:18080/trustline/party",
+			"description": "",
+			"data": [],
+			"dataMode": "raw",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"rawModeData": "{\n\t\"name\":\"Bob\",\n\t\"email\":\"Bob@gmail.com\",\n\t\"phone\":\"1234567890\",\n\t\"url\":\"http://localhost:8080/trustline\"\n}",
+			"headers": "Content-Type: application/json\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "e07b377f-b1a4-4db1-ac5f-c3ed169608cd",
+			"name": "http://localhost:18080/trustline/parties",
+			"url": "http://localhost:18080/trustline/parties",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		}
+	]
+}
